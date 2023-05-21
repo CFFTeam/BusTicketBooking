@@ -23,7 +23,7 @@ const getTickets = catchAsync(async (req, res, next) => {
         departure_city: departure_city,
         arrival_city: arrival_city,
     })
-    const starting_depots = await Station.findOne({ location: arrival_city });
+    const starting_depots = await Station.findOne({ location: departure_city });
     res.status(200).json({
         status: "success",
         tickets: tickets,
