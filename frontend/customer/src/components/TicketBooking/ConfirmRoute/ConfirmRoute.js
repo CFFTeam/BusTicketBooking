@@ -61,9 +61,9 @@ const ConfirmRoute = (props) => {
                 <div className={styles["seats"]}>
                     <span className={styles["title"]}>Ghế đã chọn</span>
                     <span className={styles["list-seats"]}>{ticketBookingDetails.choosing_seats.map((el, index) => index === ticketBookingDetails.choosing_seats.length - 1 ? `${el}` : `${el}, `)}</span>
-                    <span className={styles["watch-btn"]}>
+                    {/* <span className={styles["watch-btn"]}>
                         <EyeIcon/>
-                    </span>
+                    </span> */}
                 </div>
         </div>
         <div className={styles["border-line-spacing"]}></div>
